@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#postInfo {
+    width: 45vw;
+    background-color: rgba(128, 150, 131, 0.58);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 1s ease;
+    border: 2px solid white;
+}
+#postInfo:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+#postInfo>p {
+    margin: 10px;
+}
+.title {
+    font-size: 45px;
+    color: white;
+}
+.commentBlockSize {
+    width: calc(25% - 10px);
+    margin-bottom: 25px;
+    background-color: rgba(128, 150, 131, 0.58);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: .60s ease-in-out;
+    border: 1px solid #131212;
+}
+.commentBlockSize:hover {
+    background-color: rgb(37, 37, 37);
+    border: 1px solid white;
+    color: white;
+}
+#comments{
+    display: flex;
+    margin: 35px 0 50px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+}
+.stylID {
+    color: #131212;
+    font-size: 26px;
+    background-color: rgba(215, 213, 213, 0.76);
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}

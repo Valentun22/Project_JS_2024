@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 200px;
+}
+#logo>img{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0 50px 100px;
+}
+#logo>h1 {
+    margin-left: 20px;
+    color: white;
+    font-size: 45px;
+}
+.userBlockSize {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.63);
+    margin: 40px;
+    padding-left: 30px;
+    border-radius: 15px;
+    transition: all 1s ease;
+    width: calc(93% - 10px);
+    box-sizing: border-box;
+
+}
+.userBlockSize:hover{
+    background-color: rgba(121, 74, 74, 0.69);
+    color: #f2f2f2;
+    font-size: 17px;
+}
+.infoButtonStyle{
+    height: 42px;
+    width: 370px;
+    border: none;
+    background: #343232;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.infoButtonStyle:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 42px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+.infoButtonStyle:hover:before {
+    width: 100%;
+}
+
+#blockOne {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два стовпці */
+    gap: 10px; /* Відступи між елементами */
+}
