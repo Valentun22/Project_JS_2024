@@ -27,6 +27,15 @@ body {
     border-radius: 40px;
     padding: 20px 0 20px 50px;
     margin: 30px;
+    border: 2px solid #131212;
+    transition: 0.7s ease-in-out;
+}
+.blockAllStyle:hover {
+    border: 2px solid rgba(255, 255, 255, 0.68);
+    >p{
+        transition: 0.4s ease-in-out;
+        color: #ffffff;
+    }
 }
 .blockAllStyle>h2 {
     font-size: 40px;
@@ -35,6 +44,7 @@ body {
 }
 .blockAllStyle>p {
     margin-left: 80px;
+    font-weight: 700;
 }
 
 .buttonStyle{
@@ -65,23 +75,27 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 90vw;
+       >p{
+           text-align: center;
+       }
 }
 .postBlockSize {
-    height: 150px;
+    height: 16vh;
     width: calc(20% - 10px);
     margin-bottom: 20px;
     background-color: rgba(112, 108, 108, 0.58);
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     box-sizing: border-box;
     border-radius: 10px;
     transition: .30s ease-in-out;
     color: #f2f2f2;
+    >p{text-align: center;}
+
 }
 .postBlockSize:hover {
     background-color: rgba(49, 47, 47, 0.93);
     color: #ffffff;
     border: 1px solid white;
-    padding: 1px;
     font-size: 19px;
 }
 .postBlockSize>p {
